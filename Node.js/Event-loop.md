@@ -48,7 +48,7 @@ bar
 
 ![image](https://user-images.githubusercontent.com/67260437/85375286-09e29e80-b571-11ea-935a-8782ebe612b5.png)
 
-`setTimeout()`이 call stack에 쌓이고 실행될 때 call back 함수 `bar()`는 백그라운드에 넘겨진다. 백그라운드에서는 `setTimeout()` 설정한 시간이 지난 뒤 **Message Queue**에 call back 함수 `bar()`를 보낸다. Event Loop는 앞서 말한대로 call stack이 빈 공간인지 계속해서 확인하다가, 빈 상태가 되었을 때 Task Queue에 남아 있는 함수들을 call stack에 쌓고, 실행시킨다. 때문에 0초로 설정했음에도 `baz()`가 먼저 실행된 것이다.   
+`setTimeout()`이 call stack에 쌓이고 실행될 때 call back 함수 `bar()`는 백그라운드에 넘겨진다. 백그라운드에서는 `setTimeout()` 설정한 시간이 지난 뒤 **Message Queue**에 call back 함수 `bar()`를 보낸다. Event Loop는 앞서 말한대로 call stack이 빈 공간인지 계속해서 확인하다가, 빈 상태가 되었을 때 Message Queue에 남아 있는 함수들을 call stack에 쌓고, 실행시킨다. 때문에 0초로 설정했음에도 `baz()`가 먼저 실행된 것이다.   
 
 만약 Task Queue에 쌓인 함수들이 많다면 어떨까? 쌓여있던 함수들이 실행된 후에야 `bar()`가 실행될 수 있을 것이다. 때문에 `setTimeout()`의 시간은 정확할 수 없다. 
 
