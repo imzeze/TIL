@@ -46,7 +46,7 @@ Payload에는 토큰에 담을 정보가 들어있다. 이 정보의 조각을 C
 
 **public claim**은 공개용 정보를 저장하는 Claim이다. 충돌방지를 위해 name을 url 형식으로 짓는다. 
 
-**private claim**은 서버와 클라이언트 사이에 임의로 지정한 정보를 저장한다. public claim과 달리 충돌이 발생할 수 있다. 
+**private claim**은 서버와 클라이언트 사이에 임의로 지정한 정보를 저장한다. public claim과 달리 이름으로 인한 충돌이 발생할 수 있다. 
 
 ### Signature
 
