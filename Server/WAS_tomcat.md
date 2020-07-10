@@ -20,7 +20,7 @@ WAS는 Web Server와 Web Container를 합친 것이다. WAS만으로도 정적, 
 ### Web Server와 WAS 분리 이유
 
 * 기능을 분리하여 서버 부하 방지 및 페이지 노출 시간 단축
-* web server에서 container를 load balancing하여 고가용성을 높임 
+* web server에서 WAS를 load balancing하여 고가용성을 높임 
 * 보안이나 세션 관리에 Web Server 이용 등
 
 ### 동작 과정 
