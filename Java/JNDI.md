@@ -5,7 +5,7 @@ WAS에 데이터 및 객체 정보를 Naming 해놓고, 해당 Naming을 이용�
   
 ![image](https://user-images.githubusercontent.com/67260437/87761410-61142000-c84c-11ea-983e-8c1b03ac156c.png)
 
-WAS 내에는 여러 개의 web application이 있을 수 있는데, 소스 레벨에서 각각 설정하면 관리하기 어렵기 때문이다. 
+JNDI를 사용하는 이유는 WAS 내에는 여러 개의 web application이 있을 수 있는데, 소스 레벨에서 각각 설정하면 관리하기 어렵기 때문이다. 
 
 <br/>  
 
@@ -70,8 +70,6 @@ Connection conn = ds.getConnection();
 ## Servlet에서의 접근
 
 ### JNDI Syntax
-
-JNDI lookups.ㅇ
 
 `InitialContext`는 web application이 배포되었을 때 구성된다. 
 
