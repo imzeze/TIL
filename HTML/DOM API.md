@@ -52,7 +52,7 @@ class 속성값으로 모든 Element node를 선택한다.
     ```
     예상대로라면 `classes[0]`부터 `classes[3]`까지 요소들의 className이 바뀌었을 것 같지만 실제로는 `classes[0]`과 `classes[2]`의 className만 바뀐다. 이유는 다음과 같다.
     1. `i=0`일 때 `classes.length = 4`이고 `classes[0]`은 `HTMLCollection`의 첫번째 요소를 가리킨다. className이 변경된 후 `HTMLCollection`에 node의 변경이 실시간으로 적용된다. 즉, `HTMLCollection`의 첫번째 요소가 사라져 `length`와 `index`가 다음과 같이 변경된다.  
-    ![HTMLCollection](/assets/images/HTMLCollection.png)
+    ![HTMLCollection](https://user-images.githubusercontent.com/67260437/102706210-33d40e00-42d3-11eb-958e-87506e3151ea.png)
     2. 따라서 `i=1`일 때 `classes.length = 3`이 되고 `classes[1]`는 이전 `HTMLCollection`의 세번째 요소를 가리키게 된다. 
     3. 또 다시 node의 변경이 적용되어 `classes.length = 2`가 되어 반복문이 종료된다.   
     
