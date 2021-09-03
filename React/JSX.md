@@ -29,3 +29,12 @@ JSX는 HTML보단 Javascript에 가깝기 때문에 HTML의 attribute들을 Came
 ```js
 const element = <div fontSize="12px">hello, world</div>;
 ```
+
+<br />
+<br />
+
+---
+
+#### Reference
+
+[React Docs](https://devdocs.io/react/introducing-jsx)
