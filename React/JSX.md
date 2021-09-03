@@ -37,4 +37,4 @@ const element = <div fontSize="12px">hello, world</div>;
 
 #### Reference
 
-[React Docs](https://devdocs.io/react/introducing-jsx)
+[React documentation](https://devdocs.io/react/introducing-jsx)
