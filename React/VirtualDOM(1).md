@@ -114,6 +114,7 @@ React는 `React.createElement()`에서 반환된 Object를 비교하여 Node tre
 ```js
 // before update:
 { type: 'div', props: { className: 'cn' } }
+
 // after update:
 { type: 'span', props: { className: 'cn' } }
 ```
@@ -123,3 +124,11 @@ React는 `React.createElement()`에서 반환된 Object를 비교하여 Node tre
 만약 type이 **Component**라면 Component 구성요소에 변화가 없는지 확인하는 작업이 반복된다.
 
 <br />
+<br />
+
+---
+
+#### Reference
+
+[Optimizing React:
+Virtual DOM explained](https://evilmartians.com/chronicles/optimizing-react-virtual-dom-explained#fixing-things-mountingunmounting)
