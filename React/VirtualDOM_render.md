@@ -97,7 +97,7 @@ React.createElement(
 
 <br />
 
-> [Next](<https://github.com/imzeze/TIL/blob/master/React/VirtualDOM(2).md>)
+> [Next](https://github.com/imzeze/TIL/blob/master/React/VirtualDOM_rebuild.md)
 
 <br />
 <br />
