@@ -97,31 +97,7 @@ React.createElement(
 
 <br />
 
-### Rebuilding
-
-React는 `React.createElement()`에서 반환된 Object를 비교하여 Node tree의 어떤 부분이 update되야하는지 파악한다.
-
-```js
-// before update:
-{ type: 'div', props: { className: 'cn' } }
-
-// after update:
-{ type: 'div', props: { className: 'cnn' } }
-```
-
-두 Object의 type이 **string이고 같은 경우** React는 DOM tree에서 node를 삭제하지 않고 DOM API를 이용해 property를 수정한다.
-
-```js
-// before update:
-{ type: 'div', props: { className: 'cn' } }
-
-// after update:
-{ type: 'span', props: { className: 'cn' } }
-```
-
-만약 type이 **string이지만 다른 경우**라면 Reacts는 DOM tree에서 기존 node를 삭제해버리고 새로운 node로 대체한다.
-
-만약 type이 **Component**라면 Component 구성요소에 변화가 없는지 확인하는 작업이 반복된다.
+> [Next](<https://github.com/imzeze/TIL/blob/master/React/VirtualDOM(2).md>)
 
 <br />
 <br />
