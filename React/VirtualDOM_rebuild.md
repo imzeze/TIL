@@ -1,6 +1,6 @@
 # Virtual DOM
 
-> [Previous](<https://github.com/imzeze/TIL/blob/master/React/VirtualDOM(1).md>)
+> [Previous](https://github.com/imzeze/TIL/blob/master/React/VirtualDOM_render.md)
 
 <br />
 
