@@ -47,13 +47,13 @@ broker와 연결을 시작한다. 연결이 끊길 경우 재연결을 시도한
 `deactivate()`  
 연결된 경우 연결을 끊고 재연결 시도를 보내지 않는다.
 
-`.subscribe()`  
+`subscribe()`  
 STOMP 브로커를 구독해 메시지를 받는다.
 
-`.unsubscribe()`  
+`unsubscribe()`  
 구독을 취소한다.
 
-`.onWebSocketError()` / `.onWebSocketClose()`
+`onWebSocketError()` / `onWebSocketClose()`
 WebSocke에서 error가 발생하거나 WebSocket이 연결이 끊겼을 때 callback을 실행할 수 있다.
 
 <br />
